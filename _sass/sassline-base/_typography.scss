@@ -23,11 +23,17 @@ body {
 a {
   color: $linkColour;
   text-decoration: none;
-  transition: color .1s, background-color .1s;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
 
   &:hover, &:active, &:focus {
     color: $hoverColour;
+    transform: scale(1.1);
     text-decoration: none;
+  }
+
+  &:not(:hover):not(:active):not(:focus) {
+    transform: scale(1);
   }
 }
 
