@@ -62,6 +62,6 @@ title: "Jay's Notepad" # Site name or title
 logo: "/assets/logo.svg" # Site logo
 # favicon: "/favicon.ico" # Uncomment to add custom favicon, or leave as is to use site logo
 description: "A really basic theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
-url: "https://jaydharmadhikari.com/notepad" # Site url
+url: "https://jaydharmadhikari.com" # Site url
 baseurl: "/notepad"
 lang: en-US
