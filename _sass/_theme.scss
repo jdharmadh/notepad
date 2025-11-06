@@ -36,7 +36,6 @@ body {
 
 .header {
   @include flex(0, 0, auto);
-  background: darken($backgroundColour, 10%);
 }
 
 .logo {

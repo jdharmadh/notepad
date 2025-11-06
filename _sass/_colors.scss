@@ -1,10 +1,10 @@
 // Colours
-$bodyColour: #46412A;
+$bodyColour: rgb(206, 205, 195);
 $headingColour: darken($bodyColour, 5%);
-$linkColour: #5B5BFF;
+$linkColour: rgb(188, 82, 21);
 $hoverColour: darken($linkColour, 10%);
-$captionColour: lighten($headingColour, 40%);
+$captionColour: lighten($headingColour, 0%);
 $white: #fff;
 
-$backgroundColour: #ffefc8;
+$backgroundColour: rgb(16, 15, 15);
 $codeBackgroundColour: darken($backgroundColour, 5%);
