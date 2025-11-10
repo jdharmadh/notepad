@@ -18,6 +18,8 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - garth-jekyll-theme.gemspec
+- fmt_script.py
+- sync.sh
 
 # 2. Installed Gems
 plugins:
