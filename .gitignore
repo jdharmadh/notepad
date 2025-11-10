@@ -4,3 +4,6 @@ _site/
 garth-jekyll-theme-*.gem
 Gemfile.lock
 **/Gemfile.lock
+
+.obsidian/
+_posts/Templates/

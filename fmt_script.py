@@ -1,7 +1,7 @@
 import os, re, shutil
 
 posts_dir = "_posts"
-assets_dir = "notepad/assets/images"
+assets_dir = "assets/images"
 os.makedirs(assets_dir, exist_ok=True)
 
 for fname in os.listdir(posts_dir):
@@ -16,10 +16,6 @@ for fname in os.listdir(posts_dir):
             dst = os.path.join(assets_dir, os.path.basename(img))
             if os.path.exists(src):
                 shutil.move(src, dst)
-            text = text.replace(f"![[{img}]]", f"![{img}](/assets/images/{os.path.basename(img)})")
-
-        # Convert inline math: $...$ → \(...\)
-        # Avoid touching already-converted or escaped dollar signs
-        text = re.sub(r'(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)', r'\\(\1\\)', text)
+            text = text.replace(f"![[{img}]]", f"![{img}](/notepad/assets/images/{os.path.basename(img)})")
 
         open(path, "w").write(text)
